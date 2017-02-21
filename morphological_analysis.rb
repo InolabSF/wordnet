@@ -27,9 +27,13 @@ def get_morphologies_by_text(text)
     word_classes.each { |word_class| will_store = true and break if "#{morphology.last}".start_with?(word_class) }
     morphologies.push(morphology.first) if will_store
   end
-  morphologies
+  morphologieis
 end
 
+
+
+db_file = "wnjpn.db"
+word_net = WordNet.new(db_file)
 
 file_names = ["1.csv", "2.csv", "3.csv",]
 file_names.each do |file_name|
@@ -39,7 +43,10 @@ file_names.each do |file_name|
     puts '///////////////////////////////////'
     morphologies.each do |morphology|
       puts morphology
+      puts '--'
+      puts word_net.get_relatives(morphology, 'jpn')
     end
   end
 end
 
+word_net.close_db
