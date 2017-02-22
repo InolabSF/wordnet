@@ -16,6 +16,7 @@ GEM
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
+    lemmatizer (0.1.1)
     minitest (5.10.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   faraday
   jbuilder (~> 2.0)
+  lemmatizer
   natto
   sqlite3
   yelp

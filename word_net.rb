@@ -118,9 +118,3 @@ class WordNet
     @conn.close
   end
 end
-
-
-#db_file = "wnjpn.db"
-#word_net = WordNet.new(db_file)
-#puts word_net.get_relatives('料理', 'jpn')
-#word_net.close_db

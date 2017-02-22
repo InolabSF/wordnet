@@ -72,6 +72,7 @@ lib-cov
 *.seed
 *.log
 *.csv
+*.json
 *.dat
 *.out
 *.pid
